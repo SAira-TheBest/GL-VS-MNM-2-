@@ -1,0 +1,193 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<Body>
+<ol>
+ <center><h1 class="btn btn-success gl_mnm">Google Lens vs MobileNet Model</h1> </center> 
+ <hr>
+    <div class="test_image_and_result col-xs-12 btn btn-default">
+
+        <li class="col-sm-4 col-xs-12">
+         <b> Test Image - </b> 
+           <hr>
+           <img src="bottle.jpg" class="responsible">
+        </li>
+
+        <h5 class="col-sm-4 col-xs-12 GL btn btn-info">
+         Output on <b>GOOGLE LENS</b> - 
+               <span class="GLR"></span>
+        </h5>
+
+        <h5 class="col-sm-4 col-xs-12 MNM btn btn-info"> -
+            Output on <b>MOBILENET MODEL</b> - 
+            <span class="MNMR"></span>
+
+        </h5>
+        
+        <div class="mini_result" class="col-xs-12">
+          <br>
+          <br>
+          <br>
+          <br>
+          <h4>Result - </h4>
+        
+            <hr>
+            <h4></h4>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="test_image_and_result col-xs-12 btn btn-default">
+
+      <li class="col-sm-4 col-xs-12">
+         <b> Test Image - </b>
+         <hr>
+         <img src="bed.jpg" class="responsible">
+      </li>
+
+      <h5 class="col-sm-4 col-xs-12 GL btn btn-info">
+       Output on <b>GOOGLE LENS</b> - 
+             <span></span>
+      </h5>
+
+      <h5 class="col-sm-4 col-xs-12 MNM btn btn-info"> -
+          Output on <b>MOBILENET MODEL</b> - 
+          <span></span>
+
+      </h5>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="mini_result" class="col-xs-12">
+         
+        <h4>Result - </h4>
+      
+          <hr>
+          <h4> </h4>
+      </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="test_image_and_result col-xs-12 btn btn-default">
+
+    <li class="col-sm-4 col-xs-12">
+       <b> Test Image - </b>
+       <hr>
+       <img src="lamp.jpg" class="responsible">
+    </li>
+
+    <h5 class="col-sm-4 col-xs-12 GL btn btn-info">
+     Output on <b>GOOGLE LENS</b> - 
+           <span></span>
+    </h5>
+
+    <h5 class="col-sm-4 col-xs-12 MNM btn btn-info"> -
+        Output on <b>MOBILENET MODEL</b> - 
+        <span></span>
+
+    </h5>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="mini_result" class="col-xs-12">
+       
+      <h4>Result - </h4>
+    
+        <hr>
+        <h4> </h4>
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="test_image_and_result col-xs-12 btn btn-default">
+
+  <li class="col-sm-4 col-xs-12">
+     <b> Test Image - </b>
+     <hr>
+     <img src="book.jpg" class="responsible">
+  </li>
+
+  <h5 class="col-sm-4 col-xs-12 GL btn btn-info">
+   Output on <b>GOOGLE LENS</b> - 
+         <span></span>
+  </h5>
+
+  <h5 class="col-sm-4 col-xs-12 MNM btn btn-info"> -
+      Output on <b>MOBILENET MODEL</b> - 
+      <span></span>
+
+  </h5>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="mini_result" class="col-xs-12">
+     
+    <h4>Result - </h4>
+  
+      <hr>
+      <h4> </h4>
+  </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="test_image_and_result col-xs-12 btn btn-default">
+
+  <li class="col-sm-4 col-xs-12">
+     <b> Test Image - </b>
+     <hr>
+     <img src="spoon.jpg" class="responsible">
+  </li>
+
+  <h5 class="col-sm-4 col-xs-12 GL btn btn-info">
+   Output on <b>GOOGLE LENS</b> - 
+         <span></span>
+  </h5>
+
+  <h5 class="col-sm-4 col-xs-12 MNM btn btn-info"> -
+      Output on <b>MOBILENET MODEL</b> - 
+      <span></span>
+
+  </h5>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="mini_result" class="col-xs-12">
+     
+    <h4>Result - </h4>
+  
+      <hr>
+      <h4> </h4>
+  </div>
+
+</div>
+
+
+</ol>
+<center><h4>I tested 5 images have predicted more accuratly.  was less accurate.</h4></center>
+</Body>

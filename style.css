@@ -1,0 +1,26 @@
+body{
+    background-color: grey;
+}
+
+.responsible{
+    height: 700px;
+    width: 400px;
+}  
+
+.GL{
+color: maroon;
+}
+
+.MNM{
+color: red;
+}
+
+.test_image_and_result{
+    width: 100%
+}
+
+.gl_mnm{
+    height: 50px;
+    width: 350px;
+    font-size: 20px;
+}
